@@ -14,6 +14,8 @@
 		C90CBF1C24E52F2B00F8B705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90CBF1B24E52F2B00F8B705 /* Assets.xcassets */; };
 		C90CBF1F24E52F2B00F8B705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CBF1D24E52F2B00F8B705 /* LaunchScreen.storyboard */; };
 		C90CBF2224E52F2B00F8B705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF2124E52F2B00F8B705 /* main.m */; };
+		C90CBF2B24E532CF00F8B705 /* MainTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */; };
+		C90CBF2C24E532CF00F8B705 /* MainTWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		C90CBF1E24E52F2B00F8B705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90CBF2024E52F2B00F8B705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C90CBF2124E52F2B00F8B705 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C90CBF2824E532CF00F8B705 /* MainTWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTWebViewController.h; sourceTree = "<group>"; };
+		C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTWebViewController.m; sourceTree = "<group>"; };
+		C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTWebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,9 @@
 				C90CBF1D24E52F2B00F8B705 /* LaunchScreen.storyboard */,
 				C90CBF2024E52F2B00F8B705 /* Info.plist */,
 				C90CBF2124E52F2B00F8B705 /* main.m */,
+				C90CBF2824E532CF00F8B705 /* MainTWebViewController.h */,
+				C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */,
+				C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */,
 			);
 			path = WebTBrowser;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90CBF1F24E52F2B00F8B705 /* LaunchScreen.storyboard in Resources */,
+				C90CBF2C24E532CF00F8B705 /* MainTWebViewController.xib in Resources */,
 				C90CBF1C24E52F2B00F8B705 /* Assets.xcassets in Resources */,
 				C90CBF1A24E52F2600F8B705 /* Main.storyboard in Resources */,
 			);
@@ -146,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90CBF2B24E532CF00F8B705 /* MainTWebViewController.m in Sources */,
 				C90CBF1724E52F2600F8B705 /* ViewController.m in Sources */,
 				C90CBF1124E52F2600F8B705 /* AppDelegate.m in Sources */,
 				C90CBF2224E52F2B00F8B705 /* main.m in Sources */,
