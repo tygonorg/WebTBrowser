@@ -16,6 +16,9 @@
 		C90CBF2224E52F2B00F8B705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF2124E52F2B00F8B705 /* main.m */; };
 		C90CBF2B24E532CF00F8B705 /* MainTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */; };
 		C90CBF2C24E532CF00F8B705 /* MainTWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */; };
+		C90CBF3024E5367100F8B705 /* TabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF2F24E5367100F8B705 /* TabsView.m */; };
+		C90CBF3224E5368100F8B705 /* Tabs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90CBF3124E5368100F8B705 /* Tabs.xib */; };
+		C90CBF3524E53FF700F8B705 /* TabsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF3424E53FF700F8B705 /* TabsConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		C90CBF2824E532CF00F8B705 /* MainTWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTWebViewController.h; sourceTree = "<group>"; };
 		C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTWebViewController.m; sourceTree = "<group>"; };
 		C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTWebViewController.xib; sourceTree = "<group>"; };
+		C90CBF2E24E5367100F8B705 /* TabsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabsView.h; sourceTree = "<group>"; };
+		C90CBF2F24E5367100F8B705 /* TabsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabsView.m; sourceTree = "<group>"; };
+		C90CBF3124E5368100F8B705 /* Tabs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tabs.xib; sourceTree = "<group>"; };
+		C90CBF3324E53FF700F8B705 /* TabsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabsConfig.h; sourceTree = "<group>"; };
+		C90CBF3424E53FF700F8B705 /* TabsConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabsConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		C90CBF0E24E52F2600F8B705 /* WebTBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				C90CBF2D24E5365700F8B705 /* UI */,
 				C90CBF0F24E52F2600F8B705 /* AppDelegate.h */,
 				C90CBF1024E52F2600F8B705 /* AppDelegate.m */,
 				C90CBF1224E52F2600F8B705 /* SceneDelegate.h */,
@@ -82,6 +91,18 @@
 				C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */,
 			);
 			path = WebTBrowser;
+			sourceTree = "<group>";
+		};
+		C90CBF2D24E5365700F8B705 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C90CBF2E24E5367100F8B705 /* TabsView.h */,
+				C90CBF2F24E5367100F8B705 /* TabsView.m */,
+				C90CBF3124E5368100F8B705 /* Tabs.xib */,
+				C90CBF3324E53FF700F8B705 /* TabsConfig.h */,
+				C90CBF3424E53FF700F8B705 /* TabsConfig.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90CBF1F24E52F2B00F8B705 /* LaunchScreen.storyboard in Resources */,
+				C90CBF3224E5368100F8B705 /* Tabs.xib in Resources */,
 				C90CBF2C24E532CF00F8B705 /* MainTWebViewController.xib in Resources */,
 				C90CBF1C24E52F2B00F8B705 /* Assets.xcassets in Resources */,
 				C90CBF1A24E52F2600F8B705 /* Main.storyboard in Resources */,
@@ -159,7 +181,9 @@
 				C90CBF1724E52F2600F8B705 /* ViewController.m in Sources */,
 				C90CBF1124E52F2600F8B705 /* AppDelegate.m in Sources */,
 				C90CBF2224E52F2B00F8B705 /* main.m in Sources */,
+				C90CBF3024E5367100F8B705 /* TabsView.m in Sources */,
 				C90CBF1424E52F2600F8B705 /* SceneDelegate.m in Sources */,
+				C90CBF3524E53FF700F8B705 /* TabsConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
