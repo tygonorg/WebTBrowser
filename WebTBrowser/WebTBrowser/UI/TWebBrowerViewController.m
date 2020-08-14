@@ -21,6 +21,7 @@
     NSURL *nsurl=[NSURL URLWithString:@"https://www.google.com/"];
     NSURLRequest *nsrquest=[NSURLRequest requestWithURL:nsurl];
     [self.uiwebview loadRequest:nsrquest];
+    self.currentUrl =@"";
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -31,8 +32,7 @@
     if(self.maindelegate!=nil){
         [self.maindelegate setUrl:webView.URL.absoluteString];
     }
+    self.currentUrl =webView.URL.absoluteString;
 }
-- (void) changeTab:(NSInteger) tabIndex{
-    
-}
+
 @end

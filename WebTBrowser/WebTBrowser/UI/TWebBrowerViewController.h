@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,retain) id<TabDelegate> tabdelegate;
 @property (nonatomic,retain) id<MainControlDelegate> maindelegate;
 @property NSInteger TabIndex;
+@property NSString *currentUrl;
 @end
 
 NS_ASSUME_NONNULL_END

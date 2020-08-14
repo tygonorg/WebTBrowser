@@ -145,6 +145,7 @@
                }
        
     }
-   
+   TWebBrowerViewController *webview = [lstweb objectAtIndex:currentTab];
+    self.txt_url.text = webview.currentUrl;
 }
 @end
