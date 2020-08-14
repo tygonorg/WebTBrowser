@@ -24,6 +24,8 @@
     }
     return self;
 }
+
+
 -(instancetype) initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if(self){
@@ -33,11 +35,44 @@
 }
 
 - (IBAction)close:(id)sender {
-    [self removeFromSuperview];
+    if(self.maindelegate!=nil){
+        [self.maindelegate closeTab:self.TabIndex];
+    }
+    //[self removeFromSuperview];
 }
 -(void) install{
     [[NSBundle mainBundle] loadNibNamed:@"Tabs" owner:self options:nil];
     [self addSubview:self.contentview];
     self.contentview.frame = self.bounds;
+    
+    CAShapeLayer * maskLayer = [CAShapeLayer layer];
+    maskLayer.path = [UIBezierPath bezierPathWithRoundedRect: self.bounds byRoundingCorners: UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii: (CGSize){10.0, 10.}].CGPath;
+
+    self.contentview.layer.mask = maskLayer;
+    
+    
+   // self.contentview.layer.cornerRadius =8.0;
+    
+    UITapGestureRecognizer *tapGesture =
+    [[UITapGestureRecognizer alloc]
+     initWithTarget:self action:@selector(didTapLabelWithGesture:)];
+    [self.lbl_titles addGestureRecognizer:tapGesture];
+}
+#pragma mark Tap on label
+- (void)didTapLabelWithGesture:(UITapGestureRecognizer *)tapGesture {
+    if(self.maindelegate!=nil){
+        [self.maindelegate changeTab:self.TabIndex];
+    }
+}
+#pragma mark TBrowerDelegate
+-(void) SetTitle:(NSString *)title{
+    self.lbl_titles.text = title;
+}
+- (void) setActive:(bool) active{
+    if(active){
+        self.contentview.backgroundColor = UIColor.redColor;
+    } else{
+        self.contentview.backgroundColor = UIColor.blackColor;
+    }
 }
 @end

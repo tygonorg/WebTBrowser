@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1520C524E5700C00DD015F /* TWebBrowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1520C324E5700C00DD015F /* TWebBrowerViewController.m */; };
+		9C1520C624E5700C00DD015F /* TWebBrowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1520C424E5700C00DD015F /* TWebBrowerViewController.xib */; };
+		9C1520C924E5719E00DD015F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1520C824E5719E00DD015F /* WebKit.framework */; };
 		C90CBF1124E52F2600F8B705 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF1024E52F2600F8B705 /* AppDelegate.m */; };
 		C90CBF1424E52F2600F8B705 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF1324E52F2600F8B705 /* SceneDelegate.m */; };
 		C90CBF1724E52F2600F8B705 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CBF1624E52F2600F8B705 /* ViewController.m */; };
@@ -22,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C1520C224E5700C00DD015F /* TWebBrowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWebBrowerViewController.h; sourceTree = "<group>"; };
+		9C1520C324E5700C00DD015F /* TWebBrowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWebBrowerViewController.m; sourceTree = "<group>"; };
+		9C1520C424E5700C00DD015F /* TWebBrowerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TWebBrowerViewController.xib; sourceTree = "<group>"; };
+		9C1520C824E5719E00DD015F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9C1520CB24E5754200DD015F /* TBrowerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBrowerDelegate.h; sourceTree = "<group>"; };
 		C90CBF0C24E52F2600F8B705 /* WebTBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90CBF0F24E52F2600F8B705 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C90CBF1024E52F2600F8B705 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,17 +57,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1520C924E5719E00DD015F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1520C724E5719E00DD015F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C1520C824E5719E00DD015F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C1520CA24E5751200DD015F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9C1520CB24E5754200DD015F /* TBrowerDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		C90CBF0324E52F2600F8B705 = {
 			isa = PBXGroup;
 			children = (
 				C90CBF0E24E52F2600F8B705 /* WebTBrowser */,
 				C90CBF0D24E52F2600F8B705 /* Products */,
+				9C1520C724E5719E00DD015F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +112,6 @@
 				C90CBF1D24E52F2B00F8B705 /* LaunchScreen.storyboard */,
 				C90CBF2024E52F2B00F8B705 /* Info.plist */,
 				C90CBF2124E52F2B00F8B705 /* main.m */,
-				C90CBF2824E532CF00F8B705 /* MainTWebViewController.h */,
-				C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */,
-				C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */,
 			);
 			path = WebTBrowser;
 			sourceTree = "<group>";
@@ -96,11 +119,18 @@
 		C90CBF2D24E5365700F8B705 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9C1520CA24E5751200DD015F /* Delegate */,
 				C90CBF2E24E5367100F8B705 /* TabsView.h */,
 				C90CBF2F24E5367100F8B705 /* TabsView.m */,
 				C90CBF3124E5368100F8B705 /* Tabs.xib */,
 				C90CBF3324E53FF700F8B705 /* TabsConfig.h */,
 				C90CBF3424E53FF700F8B705 /* TabsConfig.m */,
+				C90CBF2824E532CF00F8B705 /* MainTWebViewController.h */,
+				C90CBF2924E532CF00F8B705 /* MainTWebViewController.m */,
+				C90CBF2A24E532CF00F8B705 /* MainTWebViewController.xib */,
+				9C1520C224E5700C00DD015F /* TWebBrowerViewController.h */,
+				9C1520C324E5700C00DD015F /* TWebBrowerViewController.m */,
+				9C1520C424E5700C00DD015F /* TWebBrowerViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -165,6 +195,7 @@
 				C90CBF1F24E52F2B00F8B705 /* LaunchScreen.storyboard in Resources */,
 				C90CBF3224E5368100F8B705 /* Tabs.xib in Resources */,
 				C90CBF2C24E532CF00F8B705 /* MainTWebViewController.xib in Resources */,
+				9C1520C624E5700C00DD015F /* TWebBrowerViewController.xib in Resources */,
 				C90CBF1C24E52F2B00F8B705 /* Assets.xcassets in Resources */,
 				C90CBF1A24E52F2600F8B705 /* Main.storyboard in Resources */,
 			);
@@ -184,6 +215,7 @@
 				C90CBF3024E5367100F8B705 /* TabsView.m in Sources */,
 				C90CBF1424E52F2600F8B705 /* SceneDelegate.m in Sources */,
 				C90CBF3524E53FF700F8B705 /* TabsConfig.m in Sources */,
+				9C1520C524E5700C00DD015F /* TWebBrowerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TBrowerDelegate.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TabsView : UIView
+@interface TabsView : UIView<TabDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btn_close;
 - (IBAction)close:(id)sender;
-- (void) install;
+- (void) setActive:(bool) active;
 @property (strong, nonatomic) IBOutlet UIView *contentview;
-
+@property (weak, nonatomic) IBOutlet UILabel *lbl_titles;
+@property (nonatomic,retain) id<MainControlDelegate> maindelegate;
+@property NSInteger TabIndex;
 @end
 
 NS_ASSUME_NONNULL_END

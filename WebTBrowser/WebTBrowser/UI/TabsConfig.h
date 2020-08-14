@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 #define SPACE_OF_TAB  5.0
-#define TAB_WIDTH 100
+#define TAB_WIDTH 120
 
 @interface TabsConfig : NSObject
 
